@@ -1,0 +1,62 @@
+k_Bit.car_stop()
+basic.pause(100)
+k_Bit.LED_brightness(0)
+k_Bit.led(COLOR.BLUE)
+basic.pause(1000)
+k_Bit.led(COLOR.RED)
+basic.pause(1000)
+k_Bit.led(COLOR.RED)
+basic.pause(1000)
+k_Bit.off_led()
+basic.pause(200)
+strip = neopixel.create(DigitalPin.P5, 18, NeoPixelMode.RGB)
+strip.clear()
+basic.pause(200)
+
+def on_forever():
+    for index in range(18):
+        strip.clear()
+        strip.set_pixel_color(index, neopixel.colors(NeoPixelColors.RED))
+        strip.show()
+        basic.pause(100)
+    for index2 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index2, neopixel.colors(NeoPixelColors.ORANGE))
+        strip.show()
+        basic.pause(100)
+    for index3 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index3, neopixel.colors(NeoPixelColors.YELLOW))
+        strip.show()
+        basic.pause(100)
+    for index4 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index4, neopixel.colors(NeoPixelColors.GREEN))
+        strip.show()
+        basic.pause(100)
+    for index5 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index5, neopixel.colors(NeoPixelColors.BLUE))
+        strip.show()
+        basic.pause(100)
+    for index6 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index6, neopixel.colors(NeoPixelColors.RED))
+        strip.show()
+        basic.pause(100)
+    for index7 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index7, neopixel.colors(NeoPixelColors.RED))
+        strip.show()
+        basic.pause(100)
+    for index8 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index8, neopixel.colors(NeoPixelColors.RED))
+        strip.show()
+        basic.pause(100)
+    for index9 in range(18):
+        strip.clear()
+        strip.set_pixel_color(index9, neopixel.colors(NeoPixelColors.RED))
+        strip.show()
+        basic.pause(100)
+basic.forever(on_forever)
