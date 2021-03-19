@@ -1,6 +1,6 @@
 k_Bit.carStop()
 basic.pause(100)
-k_Bit.LED_brightness(0)
+k_Bit.LED_brightness(128)
 k_Bit.Led(COLOR.blue)
 basic.pause(1000)
 k_Bit.Led(COLOR.red)
