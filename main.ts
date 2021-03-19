@@ -69,7 +69,6 @@ basic.forever(function () {
     }
     while (true) {
         k_Bit.OFFLed()
-        k_Bit.run(DIR.RunForward, 0)
-        k_Bit.Motor(MotorObs.RightSide, MotorDir.Forward, 60)
+        k_Bit.run(DIR.RunForward, 33)
     }
 })
